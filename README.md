@@ -1,18 +1,15 @@
-# unicode-width
+# unicode-width-16
+
+**This crate is a fork** of https://github.com/unicode-rs/unicode-width with
+Unicode 16 support and removed `normalization`.
 
 Determine displayed width of `char` and `str` types according to
 [Unicode Standard Annex #11][UAX11] rules.
 
 [UAX11]: http://www.unicode.org/reports/tr11/
 
-[![Build Status](https://travis-ci.org/unicode-rs/unicode-width.svg)](https://travis-ci.org/unicode-rs/unicode-width)
-
-[Documentation](https://unicode-rs.github.io/unicode-width/unicode_width/index.html)
-
 ```rust
-extern crate unicode_width;
-
-use unicode_width::UnicodeWidthStr;
+use unicode_width_16::UnicodeWidthStr;
 
 fn main() {
     let teststr = "Ｈｅｌｌｏ, ｗｏｒｌｄ!";
@@ -29,8 +26,7 @@ width. For example, the woman scientist emoji comprises of a woman emoji, a
 zero-width joiner and a microscope emoji.
 
 ```rust
-extern crate unicode_width;
-use unicode_width::UnicodeWidthStr;
+use unicode_width_16::UnicodeWidthStr;
 
 fn main() {
     assert_eq!(UnicodeWidthStr::width("👩"), 2); // Woman
@@ -54,5 +50,5 @@ to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-unicode-width = "0.1.7"
+unicode-width-16 = "0.1.0"
 ```

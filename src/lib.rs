@@ -13,9 +13,9 @@
 //! rules.
 //!
 //! ```rust
-//! extern crate unicode_width;
+//! extern crate unicode_width_16;
 //!
-//! use unicode_width::UnicodeWidthStr;
+//! use unicode_width_16::UnicodeWidthStr;
 //!
 //! fn main() {
 //!     let teststr = "Ｈｅｌｌｏ, ｗｏｒｌｄ!";
